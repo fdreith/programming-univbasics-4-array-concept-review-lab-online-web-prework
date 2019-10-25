@@ -28,16 +28,29 @@ def find_max_value(array)
   x
 end
 
-i
+#def find_min_value(array)
+#  x = 0
+#  array.length.times do |index|
+# #   if array[index] < x
+#    if array[index] < x || x.nil?
+#    x = array[index]
+#    end
+#  end
+#  x
+#end
 
 def find_min_value(array)
-  x = 0
-  array.length.times do |index|
-    if array[index] < x
-    x = array[index]
+  min = 0
+    array.length.times do |count|
+      if count == 0
+        min = array[count]
+      else
+        if array[count] < min
+          min = array[count]
+        end
+      end
     end
-  end
-  x
+  min
 end
 
 #def find_min_value(array)
